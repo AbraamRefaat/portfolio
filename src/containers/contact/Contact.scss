@@ -1,0 +1,194 @@
+@import "../../_globalColor";
+
+.contact-div-main {
+  display: flex;
+}
+
+.dark-mode a {
+  color: $textColorDark;
+}
+
+.contact-div-main > * {
+  flex: 1;
+}
+
+.contact-title {
+  font-size: 65px;
+  font-weight: 400;
+}
+
+.contact-detail,
+.contact-detail-email {
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 400;
+  color: $subTitle;
+  text-decoration: none;
+}
+
+.contact-detail:hover,
+.contact-detail-email:hover {
+  color: $textColor;
+  text-shadow: 2px 1px 2px $contactDetailHoverTS;
+  transition: all 0.3s;
+}
+
+.contact-subtitle {
+  text-transform: uppercase;
+}
+
+.contact-text-div {
+  margin-top: 1.5rem;
+}
+
+.contact-margin-top {
+  margin-top: 4rem;
+}
+
+.contact-image-div > img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 1.5rem;
+  margin-top: -4rem;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: $textColor;
+}
+
+.dark-mode .form-group label {
+  color: $textColorDark;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.dark-input {
+  background-color: $darkBoxShadow;
+  color: $textColorDark;
+  border-color: $darkBoxShadow !important;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: $textColor;
+  box-shadow: 0 0 0 2px rgba($buttonColor, 0.2);
+}
+
+.dark-mode .form-group input:focus,
+.dark-mode .form-group textarea:focus {
+  border-color: $textColorDark;
+  box-shadow: 0 0 0 2px rgba($darkBoxShadow, 0.6);
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: $buttonColor;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: darken($buttonColor, 10%);
+  transform: translateY(-2px);
+}
+
+.success-message {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.dark-mode .success-message {
+  background-color: #2a623d;
+  color: #ffffff;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .contact-title {
+    font-size: 56px;
+    font-weight: 400;
+  }
+
+  .contact-detail,
+  .contact-detail-email {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-div-main {
+    flex-direction: column;
+  }
+
+  .contact-image-div {
+    display: none;
+  }
+
+  .contact-title {
+    font-size: 40px;
+  }
+
+  .contact-detail,
+  .contact-detail-email {
+    font-size: 20px;
+  }
+  
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-avatar {
+    width: 160px;
+    height: 160px;
+    border-width: 6px;
+  }
+}
+
+.contact-avatar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.contact-avatar {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 8px solid #7c6cf6; /* Example border color, adjust as needed */
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  background: #22232e;
+}
