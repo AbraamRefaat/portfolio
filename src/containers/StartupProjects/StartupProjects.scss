@@ -1,9 +1,10 @@
 @import "../../_globalColor";
 
 .card-image {
-  max-width: 100%;
-  height: auto;
-  width: 250px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 .card-title {
   color: $titleColor;
@@ -51,11 +52,13 @@
 }
 .project-image {
   position: relative;
-  height: 250px;
+  width: 180px;
+  height: 180px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto 1.5rem auto;
 }
 
 .projects-container {
