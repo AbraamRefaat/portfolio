@@ -164,7 +164,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/Instagram Logo.jpg"),
+      image: require("./assets/images/Instagram Logo.png"),
       projectName: "Instagram Clone",
       projectDesc: "A full-featured Instagram clone using Flutter and Firebase as the backend.",
       footerLink: [
