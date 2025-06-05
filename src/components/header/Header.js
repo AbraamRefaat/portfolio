@@ -28,6 +28,14 @@ function Header() {
   const viewEducation = educationInfo.display;
   const viewProjects = bigProjects.display;
 
+  // Function to close menu on mobile
+  const closeMobileMenu = () => {
+    if (window.innerWidth <= 768) {
+      const menuBtn = document.getElementById('menu-btn');
+      if (menuBtn) menuBtn.checked = false;
+    }
+  };
+
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
@@ -47,41 +55,41 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills" onClick={closeMobileMenu}>Skills</a>
             </li>
           )}
           {viewEducation && (
             <li>
-              <a href="#education">Education</a>
+              <a href="#education" onClick={closeMobileMenu}>Education</a>
             </li>
           )}
           {viewProjects && (
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects" onClick={closeMobileMenu}>Projects</a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#achievements" onClick={closeMobileMenu}>Achievements</a>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs">Blogs</a>
+              <a href="#blogs" onClick={closeMobileMenu}>Blogs</a>
             </li>
           )}
           {viewTalks && (
             <li>
-              <a href="#talks">Talks</a>
+              <a href="#talks" onClick={closeMobileMenu}>Talks</a>
             </li>
           )}
           {viewResume && (
             <li>
-              <a href="#resume">Resume</a>
+              <a href="#resume" onClick={closeMobileMenu}>Resume</a>
             </li>
           )}
           <li>
-            <a href="#contact">Contact Me</a>
+            <a href="#contact" onClick={closeMobileMenu}>Contact Me</a>
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
