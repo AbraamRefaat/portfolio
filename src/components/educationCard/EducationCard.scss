@@ -113,22 +113,40 @@
 @media (max-width: 768px) {
   .education-card {
     text-align: center;
+    padding: 1rem;
   }
   .education-card-right {
     max-width: 100%;
+    padding: 0 1rem;
   }
   .education-card-border {
     width: 100%;
   }
   .education-roundedimg {
-    margin-top: 10px;
-    width: 4rem;
-    height: 4rem;
-    margin-bottom: 1rem;
-    margin-right: 0;
+    margin: 1rem auto;
+    width: 5rem;
+    height: 5rem;
   }
   .education-text-bullets > ul {
-    max-width: 80%;
-    margin: auto;
+    max-width: 90%;
+    margin: 1rem auto;
+    padding-left: 0;
+  }
+  .education-text-school {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  .education-text-subHeader {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+  }
+  .education-text-duration {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  .education-text-desc {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0.5rem 0;
   }
 }

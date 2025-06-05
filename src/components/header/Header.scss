@@ -180,3 +180,61 @@
     font-size: 12px;
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0.5rem 1rem;
+  }
+  
+  .header .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: $lightBackground1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .header .menu-icon {
+    padding: 1rem;
+  }
+  
+  .header .menu-icon .navicon {
+    width: 24px;
+    height: 2px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    width: 24px;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+  }
+  
+  .header li a {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid $lightBorder1;
+  }
+  
+  .header .logo {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+  }
+  
+  .dark-menu {
+    background-color: $darkBackground !important;
+  }
+  
+  .dark-menu .menu {
+    background-color: $darkBackground;
+  }
+  
+  .dark-menu li a {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+}
