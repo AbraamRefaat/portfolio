@@ -142,3 +142,20 @@
     width: auto;
   }
 }
+
+@media (max-width: 400px) {
+  .greeting-text {
+    font-size: 18px;
+    line-height: 1.1;
+    text-align: center;
+    width: 100vw;
+    margin: 0 auto;
+    word-break: break-word;
+    hyphens: auto;
+  }
+  .greet-main, .greeting-main {
+    padding: 0;
+    margin: 0 auto;
+    width: 100vw;
+  }
+}
