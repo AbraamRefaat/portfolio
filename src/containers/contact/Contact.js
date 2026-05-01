@@ -67,6 +67,54 @@ export default function Contact() {
             )}
           </div>
         </div>
+        <div className="contact-form-container">
+          <h1 className="heading contact-title" style={{textAlign: "center", marginTop: "4rem"}}>Get In Touch</h1>
+          <div
+            className={
+              isDark ? "dark-mode contact-text-div" : "contact-text-div"
+            }
+          >
+            <form
+              action="https://formspree.io/f/mnnvzepk"
+              method="POST"
+              className="contact-form"
+            >
+              <div className="form-group">
+                <label htmlFor="name">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  className={isDark ? "dark-input" : ""}
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="email">Your Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  className={isDark ? "dark-input" : ""}
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="message">Your Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  className={isDark ? "dark-input" : ""}
+                ></textarea>
+              </div>
+              <input type="hidden" name="_page" value="contact" />
+              <button type="submit" className="button">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </Fade>
   );

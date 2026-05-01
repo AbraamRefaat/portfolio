@@ -48,15 +48,13 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "FLUTTER DEVELOPER WHO LOVES BUILDING MOBILE APPLICATIONS",
+  subTitle: "SOFTWARE DEVELOPER PASSIONATE ABOUT MOBILE & AI APPLICATIONS",
   skills: [
-    emoji("⚡ Develop highly interactive and responsive mobile applications"),
-    emoji("⚡ Create clean and maintainable code using OOP concepts"),
-    emoji("⚡ Integration of third party services such as Firebase and Supabase")
+    emoji("⚡ Develop highly interactive mobile applications with Flutter and modern frameworks"),
+    emoji("⚡ Build AI-powered solutions using Machine Learning and NLP technologies"),
+    emoji("⚡ Design scalable cloud architectures with Docker, Kubernetes, and microservices"),
+    emoji("⚡ Create RESTful APIs and implement secure authentication systems")
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
@@ -64,53 +62,68 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "devicon-flutter-plain"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "Python",
+      fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "JavaScript",
+      fontAwesomeClassname: "fab fa-js"
     },
     {
       skillName: "C++",
       fontAwesomeClassname: "fab fa-cuttlefish"
     },
     {
-      skillName: "react-js",
+      skillName: "Firebase",
+      fontAwesomeClassname: "fas fa-fire"
+    },
+    {
+      skillName: "Docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "AI/ML",
+      fontAwesomeClassname: "fas fa-brain"
+    },
+    {
+      skillName: "Node.js",
+      fontAwesomeClassname: "fab fa-node-js"
+    },
+    {
+      skillName: "React",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "git",
+      skillName: "Git",
       fontAwesomeClassname: "fab fa-git-alt"
     },
     {
-      skillName: "problem-solving",
-      fontAwesomeClassname: "fas fa-puzzle-piece"
+      skillName: "Database",
+      fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "data-structures",
-      fontAwesomeClassname: "fas fa-project-diagram"
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
       schoolName: "MSA University",
       logo: require("./assets/images/msa university logo.png"),
+      partnerLogo: require("./assets/images/university-of-greenwich.jpg"),
       subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2022 - June 2026",
+      duration: "September 2022 - July 2026 (Expected)",
       desc: "Currently pursuing a degree in Computer Science.",
-      descBullets: []
-    },
-    {
-      schoolName: "AMIT, Association Of Management and Information Technology",
-      logo: require("./assets/images/amit_logo.jpeg"),
-      subHeader: "Flutter Course",
-      duration: "September 2024 - June 2025",
-      desc: "Comprehensive Flutter development course covering mobile app development fundamentals and advanced concepts.",
-      descBullets: []
+      descBullets: [
+        "Affiliated with University of Greenwich, UK"
+      ]
     }
   ]
 };
@@ -126,14 +139,29 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: false, //Set it to false to hide workExperiences Section
+  display: true, //Set it to false to hide workExperiences Section
   experience: [
+    {
+      role: "Internship Trainee",
+      company: "Arab African International Bank (AAIB)",
+      companylogo: require("./assets/images/aaib_logo.png"),
+      date: "Aug 2024",
+      desc: "Completed an internship at AAIB gaining experience in professional work environments.",
+      descBullets: [
+        "Developed strong communication, problem-solving, and teamwork skills through real-world tasks",
+        "Gained exposure to systems, workflows, and data handling within an enterprise environment"
+      ]
+    },
     {
       role: "Flutter Intern",
       company: "AMIT",
-      companylogo: require("./assets/images/facebookLogo.png"),
+      companylogo: require("./assets/images/amit_logo.jpeg"),
       date: "Sep 2024 – June 2025",
-      desc: "Completed a comprehensive mobile app development diploma focusing on Flutter and Dart, covering both beginner and advanced concepts."
+      desc: "Completed a comprehensive mobile app development diploma focusing on Flutter and Dart, covering both beginner and advanced concepts.",
+      descBullets: [
+        "Built multiple apps (Note App with Sqflite, Diary App with Hive, E-commerce App, News App) applying OOP principles and clean architecture",
+        "Developed responsive UIs with animations, used Provider & Bloc for state management, and integrated Firebase (Auth, Notifications) and Supabase (Auth, DB, Storage)"
+      ]
     }
   ]
 };
@@ -150,8 +178,52 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "MOBILE APPLICATIONS I'VE BUILT",
+  subtitle: "PROJECTS I'VE BUILT",
   projects: [
+    {
+      image: require("./assets/images/nilequest_logo.png"),
+      projectName: "NileQuest",
+      projectDesc: "An AI-powered tourism mobile application featuring personalized recommendations, trip planning, and interactive chatbot assistance.",
+      footerLink: [
+        {
+          name: "View Project",
+          url: "https://github.com/AbraamRefaat/NileQuest-app.git"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/edumaster_logo.png"),
+      projectName: "Edu-Master",
+      projectDesc: "An educational platform mobile application for online learning and course management.",
+      footerLink: [
+        {
+          name: "View Project",
+          url: "https://github.com/AbraamRefaat/Edu-Master.git"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/ethical_ai_logo.png"),
+      projectName: "Ethical AI-as-a-Service",
+      projectDesc: "Cloud-based AI service platform with Kubernetes deployment for scalable and ethical AI solutions.",
+      footerLink: [
+        {
+          name: "View Project",
+          url: "https://github.com/omar69sameh/Cloud-Deployment-with-Kubernetes.git"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/ai_governance_logo.png"),
+      projectName: "AI Governance Dashboard",
+      projectDesc: "A comprehensive dashboard for monitoring and managing AI model governance, compliance, and ethical considerations.",
+      footerLink: [
+        {
+          name: "View Project",
+          url: "https://github.com/khaledamrr/ai-governance-dashboard.git"
+        }
+      ]
+    },
     {
       image: require("./assets/images/resilince_logo.jpeg"),
       projectName: "RESILIENCE E-commerce App",
@@ -173,15 +245,9 @@ const bigProjects = {
           url: "https://github.com/AbraamRefaat/instagram-clone.git"
         }
       ]
-    },
-    {
-      image: require("./assets/images/bazooka logo.png"),
-      projectName: "Bazooka Clone",
-      projectDesc: "A restaurant mobile application using Flutter, inspired by the real-world Bazooka app.",
-      footerLink: []
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Achievement Section

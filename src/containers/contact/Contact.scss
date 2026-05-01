@@ -53,71 +53,111 @@
 }
 
 .contact-form {
-  max-width: 500px;
-  margin-top: 30px;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .contact-form {
+  background: rgba(43, 43, 43, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form-container {
+  width: 100%;
+  margin-top: 2rem;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .form-group label {
   display: block;
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 16px;
+  margin-bottom: 12px;
   color: $textColor;
+  font-weight: 600;
+  text-align: left;
+  letter-spacing: 0.5px;
 }
 
 .dark-mode .form-group label {
-  color: $textColorDark;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 12px 15px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background: rgba(255, 255, 255, 0.9);
   font-size: 16px;
+  font-family: inherit;
   transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-group textarea {
+  min-height: 160px;
+  resize: vertical;
+  line-height: 1.6;
 }
 
 .dark-input {
-  background-color: $darkBoxShadow;
-  color: $textColorDark;
-  border-color: $darkBoxShadow !important;
+  background-color: rgba(43, 43, 43, 0.8) !important;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: $textColor;
-  box-shadow: 0 0 0 2px rgba($buttonColor, 0.2);
+  border-color: $buttonColor;
+  box-shadow: 0 4px 16px rgba($buttonColor, 0.2);
+  transform: translateY(-2px);
 }
 
 .dark-mode .form-group input:focus,
 .dark-mode .form-group textarea:focus {
-  border-color: $textColorDark;
-  box-shadow: 0 0 0 2px rgba($darkBoxShadow, 0.6);
+  border-color: $buttonColor;
+  box-shadow: 0 4px 16px rgba($buttonColor, 0.3);
 }
 
 .button {
   display: inline-block;
-  padding: 12px 24px;
-  background-color: $buttonColor;
+  width: 100%;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, $buttonColor 0%, darken($buttonColor, 10%) 100%);
   color: white;
   border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: 600;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
   text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 16px rgba($buttonColor, 0.3);
 }
 
 .button:hover {
-  background-color: darken($buttonColor, 10%);
-  transform: translateY(-2px);
+  background: linear-gradient(135deg, darken($buttonColor, 10%) 0%, darken($buttonColor, 15%) 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 24px rgba($buttonColor, 0.4);
+}
+
+.button:active {
+  transform: translateY(-1px);
 }
 
 .success-message {
@@ -167,12 +207,29 @@
   
   .contact-form {
     max-width: 100%;
+    padding: 30px 20px;
+    margin: 30px auto;
   }
 
   .contact-avatar {
     width: 160px;
     height: 160px;
     border-width: 6px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 14px 16px;
+    font-size: 15px;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 14px 28px;
   }
 }
 

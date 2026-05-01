@@ -4,15 +4,22 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  width: 100%;
+  position: relative;
 }
 
 .splash-animation-container {
   height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .splash-title-container {
   font-size: 2.5rem;
   text-decoration: none;
+  text-align: center;
 }
 .splash-title {
   font-family: "Agustina Regular", cursive;
@@ -20,4 +27,22 @@
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .splash-animation-container {
+    height: 40vh;
+  }
+  .splash-title-container {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .splash-animation-container {
+    height: 35vh;
+  }
+  .splash-title-container {
+    font-size: 1.5rem;
+  }
 }
